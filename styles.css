@@ -1,0 +1,126 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  transition: background 0.3s;
+  z-index: 1000;
+}
+
+nav.scrolled {
+  background-color: #6a0dad; /* Change color on scroll */
+}
+
+nav .logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+/* Hover Effect */
+nav ul li a:hover {
+  color: #f9c74f; /* Change text color on hover */
+}
+
+/* Hero Section */
+#home {
+  height: 100vh;
+  background: linear-gradient(to right, #6a0dad, #8b5cf6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #f9c74f;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #ff9f1c;
+}
+
+/* Sections */
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background: #6a0dad;
+      width: 200px;
+      display: none;
+  }
+
+  nav ul li {
+      text-align: center;
+      padding: 10px 0;
+  }
+
+  nav ul li a {
+      display: block;
+      padding: 10px;
+  }
+
+  .menu-toggle {
+      display: block;
+  }
+}
