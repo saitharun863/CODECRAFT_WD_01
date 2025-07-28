@@ -1,4 +1,4 @@
-# Task-1-Interactive-Landing-Page
+Interactive-Landing-Page
 This project is an interactive response page that allows users to input data and receive dynamic feedback. It’s built using HTML, CSS, and JavaScript, with a focus on providing a seamless, interactive experience.
 
 Features
